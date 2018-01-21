@@ -1,0 +1,62 @@
+
+$customColor: #4FD053;
+
+div[data-page="home"] {
+
+  width: 100%;
+  height: 100%;
+
+  #content-region {
+
+    display: table;
+    width: 100%;
+    height: 100%;
+
+    > div {
+
+      display: table-row;
+
+      > div {
+
+        display: table-cell;
+        vertical-align: middle;
+
+        > div {
+
+          text-align: center;
+
+          &:first-child {
+
+            margin-bottom: 10px;
+
+          }
+
+          a {
+
+            color: $customColor;
+            border: 1px solid $customColor;
+            padding: 25px 25px;
+            border-radius: 25px;
+            display: inline-block;
+            -webkit-transition: all .25s ease-in;
+            -moz-transition: all .25s ease-in;
+            -o-transition: all .25s ease-in;
+            transition: all .25s ease-in;
+
+            &:hover{
+
+              padding: 25px 50px;
+
+            }
+
+          }
+
+        }
+        
+      }
+
+    }
+
+  }
+
+}

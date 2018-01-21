@@ -1,0 +1,43 @@
+﻿<div>
+	<div>
+		<div class="icon" data-image="<%= icon %>">
+			<span></span>
+		</div>
+		<div class="name"><%= name %></div>
+		<div class="selection">
+			<span></span>
+		</div>
+	</div>
+</div>
+<% if (_.size(categories) > 0) { %>
+	<ul class="subcategories">
+		<li class="subcategory" data-link="/<%= shortcut %>">
+			<div>
+				<div>
+					<div class="icon">
+						<span></span>
+					</div>
+					<div class="name">Ver todos los productos</div>
+					<div class="selection">
+						<span></span>
+					</div>
+				</div>
+			</div>
+		</li>
+		<% _.each(categories, function(subcategory) { %>
+			<li class="subcategory" data-link="/<%= shortcut %>/<%= subcategory.shortcut %>">
+				<div>
+					<div>
+						<div class="icon" data-image="<%= subcategory.icon %>">
+							<span></span>
+						</div>
+						<div class="name"><%= subcategory.name %></div>
+						<div class="selection">
+							<span></span>
+						</div>
+					</div>
+				</div>
+			</li>
+		<% }); %>
+	</ul>
+<% } %>

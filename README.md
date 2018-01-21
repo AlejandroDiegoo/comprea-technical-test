@@ -1,2 +1,3 @@
 # comprea-technical-test
-Technical test using Backbone, Marionette, SASS, Gulp and Webpack
+
+**Demo:** https://alejandrodiego.com/github/comprea-technical-test
